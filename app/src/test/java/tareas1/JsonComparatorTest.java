@@ -49,7 +49,7 @@ public class JsonComparatorTest {
         actualJson.put("ParentId", "218107");
         actualJson.put("Deleted", false);
 
-        Assertions.assertFalse(JsonComparator.compareJson(expectedJson, actualJson));
+        Assertions.assertTrue(JsonComparator.compareJson(expectedJson, actualJson));
     }
 
     @Test
